@@ -1,0 +1,5 @@
+(sym_lib_table
+  (lib (name "Wemos ESP32")(type "KiCad")(uri "${KIPRJMOD}/MCU_Module.kicad_sym")(options "")(descr ""))
+  (lib (name "ESP32 Devkit V1")(type "KiCad")(uri "${KIPRJMOD}/ESP32-DEVKIT-V1.kicad_sym")(options "")(descr ""))
+  (lib (name "NScaleConnectors")(type "KiCad")(uri "${KIPRJMOD}/NScaleConnectors.kicad_sym")(options "")(descr ""))
+)

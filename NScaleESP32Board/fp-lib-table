@@ -1,0 +1,3 @@
+(fp_lib_table
+  (lib (name "NScaleESP32 Footprints")(type "KiCad")(uri "${KIPRJMOD}/NScaleESP32Board_Footprints")(options "")(descr ""))
+)
