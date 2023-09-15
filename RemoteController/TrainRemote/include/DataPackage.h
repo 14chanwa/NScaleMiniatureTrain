@@ -50,6 +50,7 @@ struct DataPackage
     uint8_t train_steps_number;
     uint8_t train_speed;
     TrainFunction train_function;
+    bool train_function_activated;
     PointDirection point_direction;
 };
 

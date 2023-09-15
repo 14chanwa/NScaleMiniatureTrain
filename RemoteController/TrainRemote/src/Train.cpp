@@ -46,11 +46,12 @@ DataPackage Train::incrementSpeed(int speed_increment)
     return setSpeed(newSpeed, newDirection);
 }
 
-DataPackage Train::toggleFunction(TrainFunction function)
+DataPackage Train::toggleFunction(TrainFunction function, bool activated)
 {
     DataPackage dp;
     dp.command_type = CommandType::TRAIN_FUNCTION;
     dp.target_id = id_;
     dp.train_function = function;
+    dp.train_function_activated = activated;
     return dp;
 }

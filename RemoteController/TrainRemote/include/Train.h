@@ -3,19 +3,6 @@
 #include <Arduino.h>
 #include <DataPackage.h>
 
-enum TrainDirection : bool
-{
-    BACKWARD = false,
-    FORWARD = true
-};
-
-enum TrainFunction : uint8_t
-{
-    F0 = 0,
-    F1 = 1,
-    F2 = 2,
-    F3 = 3
-};
 
 class Train
 {
@@ -26,7 +13,7 @@ class Train
         // speed_increment can be negative
         DataPackage incrementSpeed(int speed_increment);
         DataPackage setSpeed(uint8_t speed, TrainDirection direction = TrainDirection::FORWARD);
-        DataPackage toggleFunction(TrainFunction function);
+        DataPackage toggleFunction(TrainFunction function, bool activated);
 
         uint8_t id_;
         TrainDirection train_direction_;
